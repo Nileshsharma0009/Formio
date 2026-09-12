@@ -20,7 +20,7 @@ app.use(
 );
 
 
-const url = process.env.FRONTEND_URL;
+const url = process.env.BACKEND_URL;
 const interval = Number(process.env.RELOAD_INTERVAL) || 30000;
 
 
@@ -51,7 +51,7 @@ app.use(
 
 app.use(cookieParser());
 
-app.get("/health", (req, res) => {
+app.get("/api/health", (req, res) => {
   res.status(200).json({
     success: true,
     message: "Docsy server is healthy",
