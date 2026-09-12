@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import {logger} from "./logs/logger.js"
-
+import axios from "axios" ;
 import { httpLogger } from "./logs/logger.js";
 
 const app = express();
