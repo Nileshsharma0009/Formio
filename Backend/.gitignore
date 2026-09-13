@@ -11,3 +11,11 @@ logs/
 # OS files
 .DS_Store
 Thumbs.db
+
+
+node_modules/
+.env
+.env.*
+serviceAccountKey.json
+logs/
+*.log

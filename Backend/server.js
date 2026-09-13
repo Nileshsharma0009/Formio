@@ -1,6 +1,7 @@
 // backend/src/index.js
 import dotenv from "dotenv";
 dotenv.config();
+import admin from "./config/firebase.js";
 
 
 import http from "http";
@@ -19,6 +20,7 @@ const startServer = async () => {
 
     server.listen(PORT, () => { 
       console.log(`🚀 Server running on port ${PORT}`);
+  
       
       // Check for stalled checkouts every 1 minute
     //   setInterval(() => {

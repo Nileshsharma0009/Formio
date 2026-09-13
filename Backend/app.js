@@ -5,6 +5,8 @@ import {logger} from "./logs/logger.js"
 import axios from "axios" ;
 import { httpLogger } from "./logs/logger.js";
 
+import authRoutes from "./Routes/auth.routes.js
+"
 const app = express();
 
 app.use(httpLogger);
@@ -50,6 +52,9 @@ app.use(
 
 
 app.use(cookieParser());
+
+
+app.use("api/auth" ,authRoutes) ;
 
 app.get("/api/health", (req, res) => {
   res.status(200).json({
