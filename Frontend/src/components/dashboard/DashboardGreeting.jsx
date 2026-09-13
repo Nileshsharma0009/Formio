@@ -106,7 +106,7 @@ const DashboardGreeting = () => {
       {/* Greeting */}
       <div className="greeting-text-block">
         <h1 className="greeting-heading">
-          Good morning, {firstName}! 👋
+          Hello, {firstName}! 
         </h1>
 
         <p className="greeting-sub">

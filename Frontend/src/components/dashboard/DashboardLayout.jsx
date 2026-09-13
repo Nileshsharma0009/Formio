@@ -1,4 +1,4 @@
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 import DashboardGreeting from "./DashboardGreeting";
 import UploadDropzone from "./UploadDropzone";
@@ -10,7 +10,7 @@ const DashboardLayout = () => {
   return (
     <div className="dashboard-app-root">
       {/* Left Sidebar */}
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       {/* Main Content Area */}
       <div className="dashboard-main-area">

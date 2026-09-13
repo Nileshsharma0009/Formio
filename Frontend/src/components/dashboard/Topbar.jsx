@@ -4,6 +4,8 @@ import { Search, HelpCircle, Bell, LogOut, User as UserIcon } from "lucide-react
 import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "../../Hooks/useAuth";
 import { logoutUser } from "../../services/authService";
+import BrandLogo from "../common/BrandLogo";
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   const { user } = useAuth();
@@ -42,6 +44,13 @@ const Topbar = () => {
 
   return (
     <header className="dashboard-topbar">
+
+      <div className="sidebar-brand-wrapper">
+        <Link to="/" className="sidebar-brand-link">
+          <BrandLogo size="medium" />
+        </Link>
+      </div>
+
       {/* Global Search Bar */}
       <div className="topbar-search-wrap">
         <Search size={16} className="search-icon" />

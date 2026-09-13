@@ -17,7 +17,7 @@ import BrandLogo from "../common/BrandLogo";
 
 const navItems = [
   { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { id: "documents", label: "My Documents", icon: FileText },
+ 
   { id: "ai", label: "AI Assistant", icon: MessageSquare },
   { id: "requirements", label: "Requirements", icon: ClipboardList },
   { id: "tools", label: "Auto-Fix & Tools", icon: Wrench },
