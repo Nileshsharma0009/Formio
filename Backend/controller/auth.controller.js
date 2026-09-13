@@ -1,7 +1,7 @@
 import { logger } from "../logs/logger.js";
 import User from "../models/User.js"
 
-const syncUser = async (req  , res) =>{
+export const syncUser = async (req  , res) =>{
 
     try{
       

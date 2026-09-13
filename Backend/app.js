@@ -5,8 +5,8 @@ import {logger} from "./logs/logger.js"
 import axios from "axios" ;
 import { httpLogger } from "./logs/logger.js";
 
-import authRoutes from "./Routes/auth.routes.js
-"
+import authRoutes from "./Routes/auth.routes.js"
+
 const app = express();
 
 app.use(httpLogger);

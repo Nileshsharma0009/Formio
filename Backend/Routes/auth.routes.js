@@ -1,7 +1,7 @@
 import express from "express" ;
-import { authMiddleware } from "../middleware/Auth/auth.middleware";
+import { authMiddleware } from "../middleware/Auth/auth.middleware.js";
 
-import {syncUser} from "../controller/auth.controller" ;
+import {syncUser} from "../controller/auth.controller.js" ;
 
 const router = express.Router();
 
