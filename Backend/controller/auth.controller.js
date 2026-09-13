@@ -71,3 +71,38 @@ export const syncUser = async (req  , res) =>{
         });
     }
 };
+
+export const getMe = async (req , res) =>{
+
+    try{
+        const user = await User.findOnde({
+            firebaseUid : req.user.uid ,
+        }).select("-__v");
+
+        if(!user){
+            return res.staus(404).json({
+                sucess:false ,
+                messsage : "User profiles not find",
+
+            })
+
+        }
+
+        return res.status(200).json({
+            sucess:true ,
+            data: user ,
+
+        })
+
+
+    }catch(err){
+         
+        console.error("Get current user error :" , err) ;
+
+        return  res.status(500).json({
+            sucess:false ,
+            message:" Failed to get user",
+        });
+
+    }
+};
