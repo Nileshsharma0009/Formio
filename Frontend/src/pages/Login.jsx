@@ -51,9 +51,9 @@ const Login = () => {
       >
         {/* Header */}
         <div className="auth-header">
-          <div style={{ display: "flex", justifyContent: "center", marginBottom: 16 }}>
+          {/* <div style={{ display: "flex", justifyContent: "center", marginBottom: 16 }}>
             <BrandLogo size="large" />
-          </div>
+          </div> */}
           <h1>Welcome to Formio</h1>
           <p>
             Sign in with Google to organize, validate, and prepare your application
@@ -104,13 +104,13 @@ const Login = () => {
 
         {/* Divider */}
         <div className="auth-divider">
-          <span />
+          {/* <span />
           <p>quick access</p>
-          <span />
+          <span /> */}
         </div>
 
         {/* Demo Fast Access Button */}
-        <motion.button
+        {/* <motion.button
           type="button"
           className="demo-explore-btn"
           onClick={handleDemoAccess}
@@ -120,7 +120,7 @@ const Login = () => {
           <Sparkles size={16} />
           <span>Explore Demo Dashboard (Nilesh Patil)</span>
           <ArrowRight size={15} />
-        </motion.button>
+        </motion.button> */}
 
         {/* Trust Badges & Terms */}
         <div className="auth-trust-footer">

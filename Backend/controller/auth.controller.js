@@ -106,3 +106,26 @@ export const getMe = async (req , res) =>{
 
     }
 };
+
+
+export const getUserDocuments = async (req, res) => {
+  try {
+    const firebaseUid = req.firebaseUser.uid;
+
+    const documents = await Document.find({
+      firebaseUid,
+    });
+
+    return res.status(200).json({
+      success: true,
+      data: documents,
+    });
+
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Failed to fetch documents",
+    });
+  }
+};
+
