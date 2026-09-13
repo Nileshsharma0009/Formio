@@ -1,6 +1,6 @@
 import { getAuth } from "firebase-admin/auth";
 
-import admin from "../config/firebase.js";
+import admin from "../../config/firebase.js";
 
 export const authMiddleware = async (req, res, next) => {
   try {
