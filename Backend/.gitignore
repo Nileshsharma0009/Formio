@@ -16,6 +16,23 @@ Thumbs.db
 node_modules/
 .env
 .env.*
-serviceAccountKey
+serviceAccountKey.json
 logs/
+*.log 
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Firebase credentials
+serviceAccountKey.json
+
+# Build output
+dist/
+build/
+
+# Logs
 *.log
